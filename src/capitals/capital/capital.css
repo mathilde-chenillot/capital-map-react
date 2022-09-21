@@ -1,0 +1,18 @@
+.capital-buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.capital-card {
+  width: 15%;
+  padding: 20px;
+  border: solid 1px orange;
+  border-radius: 5px;
+  min-width: 150px;
+}
+
+.capital-name {
+  margin: 0;
+}

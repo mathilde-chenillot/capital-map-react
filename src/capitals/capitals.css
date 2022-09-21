@@ -1,0 +1,20 @@
+.capitals-main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.capitals-cards-container {
+  width: 100%;
+}
+
+.capitals-cards {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

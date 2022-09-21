@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Map from './map/Map'
+import Capitals from './capitals/Capitals'
+import './App.css'
+import { useState } from 'react'
+import { NavLink, Routes, Route } from 'react-router-dom'
+import capitalsData from './capitals.json'
 
 function App() {
+  const [capitals, setCapitals] = useState(capitalsData)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <nav className="app-nav">
+        <NavLink end className={({isActive}) => isActive ? 'app-link app-link-orange' : 'app-link'} to="/">Map</NavLink>
+        <NavLink className={({isActive}) => isActive ? 'app-link app-link-orange' : 'app-link'} to="/capitals">Liste des Capitales</NavLink>
+      </nav>
+      <Routes>
+        <Route path='/' element={<Map capitals={capitals} setCapitals={setCapitals} />} />
+        <Route path='/capitals' element={<Capitals capitals={capitals} setCapitals={setCapitals} />} />
+      </Routes>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

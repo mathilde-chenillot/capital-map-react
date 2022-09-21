@@ -1,0 +1,31 @@
+[{
+  "id": 1,
+  "name": "Paris",
+  "numberOfCitizens": "2 161 000",
+  "latlg": [48.856614, 2.3522219],
+  "country": "France"
+}, {
+  "id": 2,
+  "name": "Rome",
+  "numberOfCitizens": "2 844 395",
+  "latlg": [41.9028, 12.4964],
+  "country": "Italie"
+}, {
+  "id": 3,
+  "name": "Lisbonne",
+  "numberOfCitizens": "509 515",
+  "latlg": [38.7223, -9.1393],
+  "country": "Portugal"
+}, {
+  "id": 4,
+  "name": "Édimbourd",
+  "numberOfCitizens": "488 050",
+  "latlg": [55.953252, -3.188267],
+  "country": "Écosse"
+}, {
+  "id": 5,
+  "name": "Madrid",
+  "numberOfCitizens": "3 305 408",
+  "latlg": [40.416775, -3.703790],
+  "country": "Espagne"
+}]
